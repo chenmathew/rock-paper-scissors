@@ -30,16 +30,16 @@ function play(playerSelection) {
 
 function updateScore(winner) {
 	if (winner === "player") {
-		document.getElementById("score").innerHTML = `Score: ${++pscore}-${cscore}`;
+		document.getElementById("score").innerHTML = `Your Score: ${++pscore} Computer Score: ${cscore}`;
 	}
 	else if (winner === "comp") {
-		document.getElementById("score").innerHTML = `Score: ${pscore}-${++cscore}`;
+		document.getElementById("score").innerHTML = `Your Score: ${pscore} Computer Score: ${++cscore}`;
 	}
 }
 function reset() {
 	pscore = 0;
 	cscore = 0;
-	document.getElementById("score").innerHTML = `Score: 0-0`;
+	document.getElementById("score").innerHTML = `Your Score: 0 Computer Score: 0`;
 }
 
 let pscore = 0;
